@@ -3,12 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
         <script src="https://cdn.tailwindcss.com"></script>
         <title>Carl's Portfolio</title>
     </head>
     <body  class="bg-cyan-900">
         <div class="w-full">
-            <header class="fixed w-full bg-cyan-950">
+            <header class="fixed w-full bg-cyan-950 z-50">
                 <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
                     <div class="flex lg:flex-1">
                         <a href="#" class="-m-1.5 p-1.5">
@@ -100,68 +101,144 @@
                 <h1 class="underline underline-offset-8 text-2xl m-5">My Portfolio</h1>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                     
-                    <!-- Video Card 1 -->
-                    <div class="video-container bg-cyan-800 rounded-lg shadow-lg overflow-hidden">
-                        <!-- Title Above Video -->
-                        <div class="p-4 text-lg font-semibold text-white">
-                            Video 1 Title
+                    <!-- Video Card-->
+                    <div class="video-container bg-sky-950 rounded-lg shadow-lg overflow-hidden flex flex-col h-full">
+                        <!-- Title-->
+                        <div class="p-4 text-lg font-semibold text-cyan-300">
+                            Excel Reader
                         </div>
                         
                         <!-- Video (Iframe) -->
                         <div class="relative pb-[56.25%] w-full">
-                            <iframe class="absolute inset-0 w-full h-full" src="https://www.youtube.com/embed/0bqzZARdX14" frameborder="0" allowfullscreen></iframe>
+                            <iframe class="absolute inset-0 w-full h-full" src="https://www.youtube.com/embed/88DKKe0riAQ?autoplay=1&mute=1&loop=1&playlist=88DKKe0riAQ" frameborder="0" allowfullscreen></iframe>
                         </div>
                         
-                        <!-- Footer with extra info and link -->
-                        <div class="p-4 text-sm text-gray-300 bg-cyan-700">
-                            <p>Some extra information about this video.</p>
-                            <a href="https://www.example.com" class="text-cyan-300 hover:underline" target="_blank">Learn more</a>
+                        <!-- Footer-->
+                        <div class="p-4 text-sm text-cyan-300 bg-sky-950 flex flex-col justify-between h-full">
+                            <p>Console app</p>
+                            <p>Takes info from an Excel file, stores it in the db and shows the stored info with Spectre</p>
+                            <div class="flex justify-between mt-auto">
+                                <span class="text-left"><a href="http://www.github.com/furiax/excelreader" target="_blank"><i class="bi bi-github"></i></a> </span>
+                                <span class="text-right">07/09/23</span>
+                            </div>
                         </div>
                     </div>
             
-                    <!-- Video Card 2 -->
-                    <div class="video-container bg-cyan-800 rounded-lg shadow-lg overflow-hidden">
-                        <!-- Title Above Video -->
-                        <div class="p-4 text-lg font-semibold text-white">
-                            Video 2 Title
+                    <!-- Video Card-->
+                    <div class="video-container bg-sky-950 rounded-lg shadow-lg overflow-hidden flex flex-col h-full">
+                        <!-- Title-->
+                        <div class="p-4 text-lg font-semibold text-cyan-300">
+                            Sport Result Notifier
                         </div>
                         
                         <!-- Video (Iframe) -->
                         <div class="relative pb-[56.25%] w-full">
-                            <iframe class="absolute inset-0 w-full h-full" src="https://www.youtube.com/embed/4HJ83LDpxlw" frameborder="0" allowfullscreen></iframe>
+                            <iframe class="absolute inset-0 w-full h-full" src="https://www.youtube.com/embed/Y3jNgZxAdP4?autoplay=1&mute=1&loop=1&playlist=Y3jNgZxAdP4" frameborder="0" allowfullscreen></iframe>
                         </div>
                         
-                        <!-- Footer with extra info and link -->
-                        <div class="p-4 text-sm text-gray-300 bg-cyan-700">
-                            <p>Some extra information about this video.</p>
-                            <a href="https://www.example.com" class="text-cyan-300 hover:underline" target="_blank">Learn more</a>
+                        <!-- Footer-->
+                        <div class="p-4 text-sm text-cyan-300 bg-sky-950 flex flex-col justify-between h-full">
+                            <p>Console app</p>
+                            <p>Scrapes NBA results from a webpage. Send the results to user trough mail</p>
+                            <div class="flex justify-between mt-auto">
+                                <span class="text-left"><a href="https://github.com/furiax/SportsResults" target="_blank"><i class="bi bi-github"></i></a> </span>
+                                <span class="text-right">06/09/23</span>
+                            </div>
                         </div>
                     </div>
             
-                    <!-- Video Card 3 -->
-                    <div class="video-container bg-cyan-800 rounded-lg shadow-lg overflow-hidden">
-                        <!-- Title Above Video -->
-                        <div class="p-4 text-lg font-semibold text-white">
-                            Video 3 Title
+                    <!-- Video Card-->
+                    <div class="video-container bg-sky-950 rounded-lg shadow-lg overflow-hidden flex flex-col h-full">
+                        <!-- Title-->
+                        <div class="p-4 text-lg font-semibold text-cyan-300">
+                            Shifts Logger
                         </div>
                         
                         <!-- Video (Iframe) -->
                         <div class="relative pb-[56.25%] w-full">
-                            <iframe class="absolute inset-0 w-full h-full" src="https://www.youtube.com/embed/0bqzZARdX14" frameborder="0" allowfullscreen></iframe>
+                            <iframe class="absolute inset-0 w-full h-full" src="https://www.youtube.com/embed/uQl7kEy9uwM?autoplay=1&mute=1&loop=1&playlist=uQl7kEy9uwM" frameborder="0" allowfullscreen></iframe>
                         </div>
                         
-                        <!-- Footer with extra info and link -->
-                        <div class="p-4 text-sm text-gray-300 bg-cyan-700">
-                            <p>Some extra information about this video.</p>
-                            <a href="https://www.example.com" class="text-cyan-300 hover:underline" target="_blank">Learn more</a>
+                        <!-- Footer-->
+                        <div class="p-4 text-sm text-cyan-300 bg-sky-950 flex flex-col justify-between h-full">
+                            <p>Console app</p>
+                            <p>My first web API, testing with both Swagger and Postman</p>
+                            <div class="flex justify-between mt-auto">
+                                <span class="text-left"><a href="http://www.github.com/furiax/shiftslogger" target="_blank"><i class="bi bi-github"></i></a> </span>
+                                <span class="text-right">01/08/23</span>
+                            </div>
                         </div>
                     </div>
-            
-                    <!-- Video Card 4 -->
-                    <div class="video-container bg-cyan-800 rounded-lg shadow-lg overflow-hidden">
-                        <!-- Title Above Video -->
-                        <div class="p-4 text-lg font-semibold tex
-            
+
+                    <!-- Video Card-->
+                    <div class="video-container bg-sky-950 rounded-lg shadow-lg overflow-hidden flex flex-col h-full">
+                        <!-- Title-->
+                        <div class="p-4 text-lg font-semibold text-cyan-300">
+                            Phonebook
+                        </div>
+                        
+                        <!-- Video (Iframe) -->
+                        <div class="relative pb-[56.25%] w-full">
+                            <iframe class="absolute inset-0 w-full h-full" src="https://www.youtube.com/embed/MSODWHzOyK4?autoplay=1&mute=1&loop=1&playlist=MSODWHzOyK4" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        
+                        <!-- Footer-->
+                        <div class="p-4 text-sm text-cyan-300 bg-sky-950 flex flex-col justify-between h-full">
+                            <p>Console app</p>
+                            <p>First time using Entity Framework. App can send SMS (Twilio) and emails (SendGrid)</p>
+                            <div class="flex justify-between mt-auto">
+                                <span class="text-left"><a href="http://www.github.com/Furiax/Phonebook" target="_blank"><i class="bi bi-github"></i></a> </span>
+                                <span class="text-right">22/07/23</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Video Card-->
+                    <div class="video-container bg-sky-950 rounded-lg shadow-lg overflow-hidden flex flex-col h-full">
+                        <!-- Title-->
+                        <div class="p-4 text-lg font-semibold text-cyan-300">
+                            Shifts Logger
+                        </div>
+                        
+                        <!-- Video (Iframe) -->
+                        <div class="relative pb-[56.25%] w-full">
+                            <iframe class="absolute inset-0 w-full h-full" src="https://www.youtube.com/embed/uQl7kEy9uwM?autoplay=1&mute=1&loop=1&playlist=uQl7kEy9uwM" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        
+                        <!-- Footer-->
+                        <div class="p-4 text-sm text-cyan-300 bg-sky-950 flex flex-col justify-between h-full">
+                            <p>Console app</p>
+                            <p>My first web API, testing with both Swagger and Postman</p>
+                            <div class="flex justify-between mt-auto">
+                                <span class="text-left"><a href="http://www.github.com/furiax/shiftslogger" target="_blank"><i class="bi bi-github"></i></a> </span>
+                                <span class="text-right">01/08/23</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Video Card-->
+                    <div class="video-container bg-sky-950 rounded-lg shadow-lg overflow-hidden flex flex-col h-full">
+                        <!-- Title-->
+                        <div class="p-4 text-lg font-semibold text-cyan-300 ">
+                            Flashcards
+                        </div>
+                        
+                        <!-- Video (Iframe) -->
+                        <div class="relative pb-[56.25%] w-full">
+                            <iframe class="absolute inset-0 w-full h-full" src="https://www.youtube.com/embed/zGO4Mp-pt0w?autoplay=1&mute=1&loop=1&playlist=zGO4Mp-pt0w" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        
+                        <!-- Footer-->
+                        <div class="p-4 text-sm text-cyan-300 bg-sky-950 flex flex-col justify-between h-full">
+                            <p>Console app</p>
+                            <p>using DTO's - multiple tables - cascading - pivoting - create reports</p>
+                            <div class="flex justify-between mt-auto">
+                                <span class="text-left"><a href="http://www.github.com/furiax/FlashCards" target="_blank"><i class="bi bi-github"></i></a> </span>
+                                <span class="text-right">13/07/23</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <hr>
             <div id="journey" class="text-cyan-100 text-center p-5 m-5">
                 <h1 class="underline underline-offset-8 text-2xl m-5 ">My journey so far</h1>
