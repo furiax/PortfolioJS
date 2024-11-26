@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-py-20">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>Carl's Portfolio</title>
+    </head>
+    <body  class="bg-cyan-900">
+        <div class="container">
+            <header class="fixed w-full bg-cyan-950">
+                <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+                    <div class="flex lg:flex-1">
+                        <a href="#" class="-m-1.5 p-1.5">
+                            <!-- sr = only visibile for screen readers-->
+                            <span class="sr-only">Your Company</span>
+                            <img class="h-8 w-auto" src="https://tailwindui.com/plus/img/logos/mark.svg?color=cyan&shade=300" alt="company logo">
+                        </a>
+                    </div>
+                    <!--Hamburger menu on small screens-->
+                    <div class="flex lg:hidden">
+                        <button id="hamburger-btn" type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-cyan-300">
+                            <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                            </svg>
+                        </button>
+                    </div>
+                    <!--Menu on large screens-->
+                    <div class="hidden lg:flex lg:gap-x-12">
+                        <a href="#" class="text-sm/6 font-semibold text-cyan-300">Home</a>
+                        <a href="#portfolio" class="text-sm/6 font-semibold text-cyan-300">Portfolio</a>
+                        <a href="#aboutme" class="text-sm/6 font-semibold text-cyan-300">About Me</a>
+                        <a href="#contact" class="text-sm/6 font-semibold text-cyan-300">Contact</a>
+                    </div>
+                    <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+                        <a href="http://www.linkedin.com" target="_blank" class="text-sm/6 font-semibold text-cyan-300">Linked in symbol</a>
+                    </div>
+                </nav>
+    
+                <!-- Mobile menu, show/hide based on menu open state. -->
+                <div id="mobile-menu" class="hidden lg:hidden" role="dialog" aria-modal="true">
+                    <!-- Background backdrop, show/hide based on slide-over state. -->
+                    <div class="fixed inset-0 z-10"></div>
+                    <div class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-cyan-950 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-cyan-300/10">
+                    <div class="flex items-center justify-between">
+                        <a href="#" class="-m-1.5 p-1.5">
+                        <span class="sr-only">Your Company</span>
+                        <img class="h-8 w-auto" src="https://tailwindui.com/plus/img/logos/mark.svg?color=cyan&shade=300" alt="">
+                        </a>
+                        <button id="close-menu-btn" type="button" class="-m-2.5 rounded-md p-2.5 text-cyan-300">
+                        <span class="sr-only">Close menu</span>
+                        <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                        </svg>
+                        </button>
+                    </div>
+                    <div class="mt-6 flow-root">
+                        <div class="-my-6 divide-y divide-cyan-300/10">
+                        <div class="space-y-2 py-6">
+                            <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-cyan-300 hover:bg-cyan-900">Home</a>
+                            <a href="#portfolio" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-cyan-300 hover:bg-cyan-900">Portfolio</a>
+                            <a href="#aboutme" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-cyan-300 hover:bg-cyan-900">About Me</a>
+                            <a href="#contact" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-cyan-300 hover:bg-cyan-900">Contact</a>
+                        </div>
+                        <div class="py-6">
+                            <a href="http://www.linkedin.com" target="_blank" class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-cyan-300 hover:bg-cyan-900">Symbols</a>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </header>
+            <div id="home" class="grid grid-cols-12 gap-4 pt-20">
+                <div class="col-span-6 flex flex-col items-center justify-center">
+                    <h1 class="text-2xl font-semibold">Hey, I'm Carl Malfliet</h1>
+                    <h1 class="text-2xl font-bold">.NET Full Stack Developer</h1>
+                </div>
+                <div class="col-span-6 flex items-center justify-center">
+                <img src="./images/ManOnLaptop.jpeg" class="p-4 w-[400px] h-[400px">
+                </div>
+            </div>
+            <div id="portfolio">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae minus quos accusamus harum dolorum dolorem aliquam possimus laudantium eaque similique distinctio voluptatibus laboriosam ut eos repudiandae libero cupiditate, molestias recusandae amet hic cum, dignissimos optio quaerat. Necessitatibus est maiores, consequuntur, quibusdam quis dicta aspernatur nesciunt veniam corporis veritatis accusantium quam, repellat beatae eum vitae inventore nam ut nobis nostrum provident debitis accusamus in. Quos doloremque cumque aspernatur itaque nihil ratione fuga debitis cupiditate, voluptatibus consequatur asperiores praesentium amet, quis doloribus nisi perferendis. Officiis dolores, consequatur eum nostrum rerum ipsum! Consectetur nostrum natus autem culpa perferendis laborum rem aliquid repellendus reprehenderit ut, molestiae vero rerum quasi, odit quisquam nesciunt eius tenetur assumenda earum. Autem voluptatem nisi sapiente rem reprehenderit, at voluptatibus fugiat dignissimos quod ipsum minima sit iste quidem aliquam doloremque nulla maxime! Architecto, possimus aliquam! Consequuntur ipsam nobis enim facere labore obcaecati ea velit dolor et laudantium? Iste, neque nesciunt recusandae eveniet delectus vel doloribus itaque nobis explicabo ut magni similique, quisquam animi fuga placeat ullam non laboriosam necessitatibus inventore cumque provident deleniti amet? Perferendis incidunt laborum, assumenda nihil repudiandae libero vero impedit? Commodi velit sit numquam omnis est, quas libero accusamus minus, aperiam, asperiores exercitationem quaerat optio! Labore deleniti accusantium harum est ducimus, ab laudantium similique illum a blanditiis eius, saepe inventore! Magnam nobis doloremque tenetur tempora rem alias unde obcaecati aut quibusdam atque accusamus ipsum, non error qui culpa maxime necessitatibus laborum animi totam facere, est corporis recusandae. Perferendis molestias excepturi a laborum aspernatur sequi quaerat, voluptate voluptatum animi fugiat et aliquid earum eum assumenda facere minus quod amet hic ratione libero ipsam. Reiciendis odio provident sunt. Cumque eum qui pariatur! Adipisci, vel consequatur expedita, necessitatibus alias consectetur doloremque recusandae voluptas aut perferendis ex debitis minima cum pariatur veniam dolorem molestiae libero vitae odio et nobis laudantium ea?</p>
+                <hr>
+            </div>
+            <div id="contact">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti omnis eaque, debitis explicabo ea, earum voluptas doloremque, at sint possimus molestias. Officiis explicabo ex inventore, omnis veniam voluptatibus consectetur impedit, quis aspernatur provident tempora beatae? Saepe ratione, reprehenderit nulla consectetur sapiente veniam velit. Vero aut excepturi dolorem nesciunt asperiores eaque reiciendis nobis distinctio beatae enim aliquid inventore quisquam numquam eos, commodi repellat! Dolorum neque, nam error in eum dignissimos unde, quasi, ipsum accusantium praesentium sint voluptates ratione excepturi officia iste reprehenderit eos consectetur modi possimus nesciunt accusamus. Commodi repellat voluptas omnis rem fugit amet iure recusandae odio, deleniti laborum ducimus, ipsum a ea perferendis laboriosam ullam. Nisi temporibus optio ut rem iusto deserunt, architecto iste. Iusto illum dolores id, possimus earum, nostrum in alias fugiat mollitia, distinctio odio sit culpa magni veniam. Officiis illum maxime vitae corrupti quos a debitis facere iure asperiores temporibus nobis maiores vero sapiente harum deleniti voluptatum dolorum quam iusto, quisquam fugiat ad. Vitae accusantium cupiditate quis quod, soluta temporibus ratione deserunt possimus error rerum et fugit culpa, fugiat quo blanditiis quibusdam officiis quisquam. Ratione natus molestiae optio repudiandae asperiores, nulla aliquam adipisci dignissimos quibusdam excepturi perspiciatis voluptatem quam itaque nostrum ipsum atque ad pariatur. Saepe nemo corrupti vel amet possimus corporis, mollitia exercitationem aut. Modi nisi provident quo, quos pariatur quia nulla veritatis blanditiis molestiae ipsa minus quaerat doloribus dignissimos repellat? Consectetur vitae commodi, sed delectus atque maxime aliquam, aspernatur porro eligendi rem, repellendus laboriosam ipsum fuga laudantium tenetur eos ipsa repellat molestias harum quod.
+            </div>
+        </div>   
+        <script src="./styles2.js"></script>
+    </body>
+</html>
